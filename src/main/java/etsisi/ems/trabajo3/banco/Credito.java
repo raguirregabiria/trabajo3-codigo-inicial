@@ -92,10 +92,7 @@ return credito;}
 
 	//traspaso tarjeta a cuenta
 		public void ingresar(double x) throws Exception {
-			// Movimiento m=new Movimiento();
-			// m.setConcepto("Ingreso en cuenta asociada (cajero automático)");
-			// m.setImporte(x);
-			// mMovimientos.addElement(m);
+
 			
 			double comision = (x * 0.05 < 3.0 ? 3 : x * 0.05); // Añadimos una comisión de un 5%, mínimo de 3 euros.		
 			if (x > getCreditoDisponible())
