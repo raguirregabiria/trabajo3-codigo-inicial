@@ -123,7 +123,7 @@ return credito;}
 	}
 
 	public double getSaldo() {
-		return this.mCuentaAsociada.getSaldo();
+		 return this.mCuentaAsociada.getSaldo();
 	}
 
 	public double getCreditoDisponible() {
