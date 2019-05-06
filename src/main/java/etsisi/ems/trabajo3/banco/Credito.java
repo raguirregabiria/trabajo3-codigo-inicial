@@ -123,12 +123,7 @@ return credito;}
 	}
 
 	public double getSaldo() {
-		double r = 0.0;
-		for (int i = 0; i < this.mMovimientos.size(); i++) {
-			Movimiento m = (Movimiento) mMovimientos.elementAt(i);
-			r += m.getImporte();
-		}
-		return r;
+		return this.mCuentaAsociada.getSaldo();
 	}
 
 	public double getCreditoDisponible() {
